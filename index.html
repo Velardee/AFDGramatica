@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>ElectronJS</title>
+
+    <style>
+
+        .containerTitulo{
+            background-color: #4e4bff;
+            height: 20vh;
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        .containerTitulo h1{
+            text-align: center;
+            color: white;
+            padding-top: 2%;
+        }
+
+        .centerContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .containerSelect{
+            width: 50%;
+            height: 30vh;
+            background-color: #fbfbfb;
+            margin-top: -3%;
+            border-radius: 20px;
+        }
+
+        .containerSelect h2{
+            text-align: center;
+            color: #4e4bff;
+        }
+
+        .containerButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button{
+            background-color: #3dfbad;
+            border: none;
+            color: white;
+            outline: none;
+            font-size: 16px;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .paddingButton{
+            padding: 2%;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="containerTitulo">
+        <h1>Automatas Finitos Deterministicos</h1>
+    </div>
+
+    <div class="centerContainer">
+        <div class="containerSelect">
+            <h2>Seleciona un automata</h2>
+            <div class="containerButton">
+                <div class="paddingButton">
+                    <button id="1AFD" class="button">
+                       AFD 1
+                    </button>
+                </div>
+                <div class="paddingButton">
+                    <button id="2AFD" class="button">
+                        ADF 2
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loadVentanas.js"></script>
+
+</body>
+
+</html>

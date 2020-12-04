@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFD</title>
+    <style>
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        
+        .containerLenguaje{
+            background-color: #4e4bff;
+            height: 30vh;
+            color: white;
+        }
+
+        .containerLenguaje h2{
+            padding-top: 1%;
+            padding-left: 3%;
+        }
+
+        .containerLenguaje label{
+            padding: 1%;
+        }
+
+        .container{
+            background-color: #fbfbfb;
+            border-radius: 28px;
+            margin-top: -6%;
+        }
+
+        .form{
+            display: grid;
+            width: 35%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 33%;
+            padding-top: 3%;
+        }
+
+        .form label{
+            margin-bottom: 4%;
+            color: #4e4bff;
+        }
+
+        .form input{
+            margin-bottom: 5%;
+            border-radius: 9px;
+            outline: none;
+            text-indent: 4px;
+            border: 1px solid #c7c7c7;
+        }
+
+        .button{
+            background-color: #3dfbad;
+            border: none;
+            color: white;
+            outline: none;
+            font-size: 16px;
+            padding: 8px 30px;
+            border-radius: 25px;
+        }
+
+        .table{
+            padding: 1% 4%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerLenguaje">
+        <h2>Lenguaje:</h2>
+        <label>Σ={a,b,c}. El conjunto de cadenas que inician en la sub-cadena ac y no terminan en la sub-cadena ab.</label>
+    </div>
+
+<div class="container">
+    <div class="form">
+        <label>Ingresa la cadena para validar:</label>
+        <input type="text" id="txtCadena">
+        <button id="comprobar" class="button">Verificar cadena</button>
+    </div>
+
+    <div class="table">
+        <h4>Tabla de transiciones:</h4>
+        <table>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+            </tr>
+            <tr>
+                <th>S1</th>
+                <td>S2</td>
+                <td>S1</td>
+                <td>S1</td>
+            </tr>
+            <tr>
+                <th>S2</th>
+                <td>S1</td>
+                <td>S1</td>
+                <td>S3</td>
+            </tr>
+            <tr>
+                <th>S3</th>
+                <td>S4</td>
+                <td>S3</td>
+                <td>S3</td>
+            </tr>
+            <tr>
+                <th>S4</th>
+                <td>S4</td>
+                <td>S5</td>
+                <td>S3</td>
+            </tr>
+            <tr>
+                <th>S5</th>
+                <td>S4</td>
+                <td>S3</td>
+                <td>S3</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    <script src="2AFD.js"></script>
+</body>
+
+</html>
